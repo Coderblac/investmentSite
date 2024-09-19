@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
           Expanded(child: Row(
             children: [
               CourseDetail(),
-              Expanded(child: Center(child: CallToAction('Yayyy'),))
+              Expanded(child: Center(child: CallToAction('Invest Now'),))
             ],
           ))
         ],),
