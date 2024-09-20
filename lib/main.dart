@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:investment/View/Layout_template/layout_template.dart';
 import 'package:investment/firebase_options.dart';
-import 'package:investment/homeview/home/homepage.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:investment/locator/locator.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -9,7 +10,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-
+  setupLocator();
   runApp(const MyApp());
 }
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: const LayoutTemplate(),
     );
   }
 }
