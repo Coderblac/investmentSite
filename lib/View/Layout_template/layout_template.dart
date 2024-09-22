@@ -14,7 +14,7 @@ class LayoutTemplate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
-      builder:(contex, sizingInformation)=>
+      builder:(context, sizingInformation)=>
         Scaffold(
           drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
           ? const CustomNavigationDrawer()

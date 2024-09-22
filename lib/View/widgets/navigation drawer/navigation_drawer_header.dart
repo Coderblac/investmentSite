@@ -7,17 +7,20 @@ class NavigationDrawerHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 150,
+      // height: 40,
+      padding: const EdgeInsets.symmetric(vertical: 20),
       color: buttonColor,
       alignment: Alignment.center,
-      child: Column(
+      child: const Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Text('Skill',
-          style: TextStyle(color: Colors.white),
+          Text('Q U I X E L - M E N U',
+          textAlign:  TextAlign.center,
+          style: TextStyle(color: Colors.white,),
           ),
-          Text('Tap Here',
-          style: TextStyle(color: Colors.white),
-          )
+          // Text('Tap Here',
+          // style: TextStyle(color: Colors.white),
+          // )
         ],
       ),
     );

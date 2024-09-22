@@ -3,7 +3,8 @@ import 'package:investment/constants/app_colors.dart';
 
 class CallToActionMobile extends StatelessWidget {
   final String title;
-  const CallToActionMobile(this.title);
+  final String navigationPath;
+  const CallToActionMobile(this.title, this.navigationPath);
 
   @override
   Widget build(BuildContext context) {

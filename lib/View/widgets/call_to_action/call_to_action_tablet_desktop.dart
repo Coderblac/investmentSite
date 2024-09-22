@@ -3,7 +3,8 @@ import 'package:investment/constants/app_colors.dart';
 
 class CallToActionTabletDesktop extends StatelessWidget {
   final String title;
-  const CallToActionTabletDesktop(this.title);
+  final String navigationPath;
+  const CallToActionTabletDesktop(this.title, this.navigationPath);
 
   @override
   Widget build(BuildContext context) {

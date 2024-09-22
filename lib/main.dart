@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:investment/View/Layout_template/layout_template.dart';
+import 'package:investment/View/auth/auth.dart';
 import 'package:investment/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:investment/locator/locator.dart';
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const LayoutTemplate(),
+      home: const AuthPage(),
     );
   }
 }

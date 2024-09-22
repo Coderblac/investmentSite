@@ -5,13 +5,14 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 class CallToAction extends StatelessWidget {
   final String title;
-  const CallToAction(this.title);
+  final String navigationPath;
+  const CallToAction(this.title, this.navigationPath,);
 
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: CallToActionMobile(title),
-      desktop: CallToActionTabletDesktop(title)
+      mobile: CallToActionMobile(title,navigationPath),
+      desktop: CallToActionTabletDesktop(title, navigationPath)
     );
   }
 }

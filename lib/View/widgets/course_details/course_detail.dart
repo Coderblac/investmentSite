@@ -42,7 +42,7 @@ class CourseDetail extends StatelessWidget {
               fontSize: titleSize),
               textAlign: textAlignment,),
             ),
-            const SizedBox(height: 30,),
+            const SizedBox(height: 15,),
             Text('Welcome to Quixel, an innovative investment platform designed to help you grow your wealth with ease and confidence. Quixel offers a user-friendly interface, comprehensive tools, and expert insights to empower both novice and experienced investors. Whether you\'re interested in stocks, bonds, or other assets, Quixel provides personalized investment strategies, real-time market analysis, and a secure environment to manage your portfolio. Join us at Quixel and take control of your financial future with smart, data-driven decisions.',
             style: TextStyle(height: 0.9,
             fontWeight: FontWeight.normal,

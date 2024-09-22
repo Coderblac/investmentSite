@@ -3,7 +3,7 @@ import 'package:responsive_builder/responsive_builder.dart';
 
 class Centeredview extends StatelessWidget {
   final Widget child;
-  const Centeredview({required this.child});
+  const Centeredview({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +14,8 @@ class Centeredview extends StatelessWidget {
           body: Container(
           alignment: Alignment.topCenter,
           padding: sizingInformation.deviceScreenType == DeviceScreenType.mobile ? const 
-          EdgeInsets.symmetric(horizontal: 20, vertical: 20):const 
-          EdgeInsets.symmetric(horizontal: 60, vertical: 20),
+          EdgeInsets.only(left: 20, right: 20, top: 20):const 
+          EdgeInsets.only(left: 60, right: 60, top: 60),
           child: ConstrainedBox(constraints: const BoxConstraints(maxHeight: 1200),
           child: child,),
                 ),
