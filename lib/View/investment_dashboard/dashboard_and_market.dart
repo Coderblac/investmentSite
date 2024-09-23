@@ -11,8 +11,8 @@ class DashboardAndMarket extends StatelessWidget {
       builder: (context, constraints) {
         if (constraints.maxWidth > 800) {
           // For larger screens (like desktop/tablet), show them side by side
-          return Row(
-            children: const [
+          return const Row(
+            children:  [
               Expanded(child: InvestmentDashboardPage()),
               VerticalDivider(width: 1, color: Colors.grey),  // Divider between dashboard and market
               Expanded(child: MarketPage()),
@@ -20,8 +20,8 @@ class DashboardAndMarket extends StatelessWidget {
           );
         } else {
           // For smaller screens (like mobile), show them stacked vertically
-          return Column(
-            children: const [
+          return const Column(
+            children: [
               Expanded(child: InvestmentDashboardPage()),
               Divider(height: 1, color: Colors.grey),  // Divider between dashboard and market
               Expanded(child: MarketPage()),

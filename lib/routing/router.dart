@@ -21,6 +21,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:investment/View/about/about.dart';
+import 'package:investment/View/auth/login.dart';
 import 'package:investment/View/auth/signup.dart';
 import 'package:investment/View/errors/not_found_page.dart';
 import 'package:investment/View/home/homepage.dart';
@@ -36,6 +37,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return _getPageRoute(AboutPage());
     case SignUpRoute:
       return _getPageRoute(SignUpPage());
+    case loginRoute:
+      return _getPageRoute(LoginPage(onTap: () {},));
     case InvestmentDashboardRoute:
       return _getPageRoute(DashboardAndMarket());
     case ProfileRoute:

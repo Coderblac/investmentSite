@@ -33,8 +33,8 @@ class CustomNavigationDrawer extends StatelessWidget {
                                 Icons.app_registration_rounded,
                                 'Sign Up', SignUpRoute),// Show when no user is signed in
                               DrawerItem(
-                                Icons.app_registration_rounded,
-                                'Sign Up', SignUpRoute),
+                                Icons.login,
+                                'Login', loginRoute),
                               DrawerItem(Icons.help_outline, 'About',AboutRoute), 
                             ],
                           );
